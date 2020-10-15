@@ -54,6 +54,11 @@ echo "<td>";
     $category->readName();
     echo $category->name;
 echo "</td>";
+echo "<tr>";
+echo "<td>Image</td>";
+echo "<td>";
+echo $product->image ? "<img src='uploads/{$product->image}' style='width:300px;' />" : "No image found.";
+echo "</td>";
 echo "</tr>";
 echo "</table>";
 
